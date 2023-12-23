@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2%;
+    align-items: center;
+    height: 111px;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+
+}
+nav>ul>li{
+    margin-inline: 10px;
+    text-transform: uppercase;
+}
+nav>div>i{
+    margin-inline: 15px;
+}
+#hero{
+    width: 100vw;
+    height: 1017px;
+    background: url(./assets/pizza1\ 1.svg);
+    background-size: cover;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#hero>h2{
+    width: 902px;
+    height: 215px;
+    /* text-align: center;  */
+    color: #fff; 
+    font-size: 101px; 
+    font-family: Quattrocento; 
+    font-weight: 700; 
+    line-height: 108.50px; 
+    letter-spacing: 9.09px; 
+    font-style: normal;
+}
+#hero>p{
+width:599px;
+color:#fff;
+font-size: 25px;
+font-family: Ruda;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 2.25px;
+word-wrap: break-word
+}
+.horizontal-line{
+    width:586px;
+    height:13px;
+    background: #F24C4C; 
+    box-shadow: 3px 6px 18px 0px rgba(0,0,0,0.25);
+}
+#about-us ,#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+
+}
+#about-us>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+#about-us-div>p{
+width: 40%;
+color: white;
+font-size: 25px;
+font-family: Ruda;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 2.25px;
+}
+#menu>p{
+width:80vw;
+text-align: justify;
+color: white;
+font-size: 25px;
+font-family: Ruda;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 1.80px;
+}
+#menu-div{
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    margin-bottom: 50px;
+}
+.menu-item>div{
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu-item>div>h6{
+color: white;
+font-size: 20px;
+font-family: Ruda;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 1.80px;
+word-wrap: break-word;
+}
+.menu-item>div>p{
+color: white;
+font-size: 20px;
+font-family: Ruda;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 1.80px;
+word-wrap: break-word;
+text-align: justify;
+}

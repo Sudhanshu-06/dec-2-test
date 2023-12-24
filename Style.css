@@ -70,7 +70,7 @@ word-wrap: break-word
     background: #F24C4C; 
     box-shadow: 3px 6px 18px 0px rgba(0,0,0,0.25);
 }
-#about-us ,#menu{
+#about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,33 +93,43 @@ font-weight: 400;
 line-height: 40px;
 letter-spacing: 2.25px;
 }
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
 #menu>p{
 width:80vw;
 text-align: justify;
 color: white;
 font-size: 25px;
+font-style: normal;
 font-family: Ruda;
 font-weight: 400;
 line-height: 40px;
-letter-spacing: 1.80px;
+letter-spacing: 2.25px;
 }
 #menu-div{
     width: 85vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    margin-top: 50px;
 }
 .menu-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 650px;
+    width:45%;
     margin-bottom: 50px;
 }
 .menu-item>div{
     margin-left: 20px;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-around;
 }
 .menu-item>div>h6{
@@ -140,4 +150,65 @@ line-height: 40px;
 letter-spacing: 1.80px;
 word-wrap: break-word;
 text-align: justify;
+}
+#gallery{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+#gallery{
+    width: 85vw;
+    margin: auto;
+}
+#gallery-div{
+    display: grid;
+    width: 85vw;
+    /* border: 2px solid yellow; */
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: repeat(6,100px);
+    margin-top: 50px;
+    grid-template-areas: 
+    "a b c"
+    "a b c"
+    "a d c"
+    "a d f"
+    "a e f"
+    "a e f";
+    gap: 10px;
+    overflow: hidden;
+}
+#gallery-div>img{
+    width: 100%;
+    height: 100%;
+}
+#grid_img_a{
+    grid-area: a;
+}
+#grid_img_b{
+    grid-area: b;
+}
+#grid_img_c{
+    grid-area: c;
+}
+#grid_img_d{
+    grid-area: d;
+}
+#grid_img_e{
+    grid-area: e;
+}
+#grid_img_f{
+    grid-area: f;
+}
+#my-carousel{
+    width: 85vw;
+    margin: auto;
+    overflow: hidden;
+}
+#my-carousel img{
+    height: 100%;
+    width: 100%;
+}
+#my-carousel{
+    text-align: center;
 }
